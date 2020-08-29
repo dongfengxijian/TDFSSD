@@ -9,4 +9,4 @@ Python3.6, PyTorch0.4.1, and NVIDIA GPUs
 * Install PyTorch-0.4.1 according to your environment refering to https://pytorch.org/.  
 * Clone this repository.  
 * Compile the nms and coco tools:  
-'./make.sh'
+    ./make.sh
