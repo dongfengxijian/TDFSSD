@@ -9,4 +9,14 @@ Python3.6, PyTorch0.4.1, and NVIDIA GPUs
 * Install PyTorch-0.4.1 according to your environment refering to https://pytorch.org/.  
 * Clone this repository.  
 * Compile the nms and coco tools:  
-    ./make.sh
+```Shell
+./make.sh
+```
+Check your GPU architecture support in utils/build.py, line 131. Default is:
+``` 
+'nvcc': ['-arch=sm_61',
+```
+Then download the dataset by following the [instructions](#download-voc2007-trainval--test) below and install opencv. 
+```Shell
+conda install opencv
+```
