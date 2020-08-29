@@ -38,3 +38,17 @@ sh data/scripts/VOC2007.sh # <directory>
 sh data/scripts/VOC2012.sh # <directory>
 ```
 ### COCO Dataset
+Install the MS COCO dataset at /path/to/coco from [official website](http://mscoco.org/), default is ~/data/COCO. It should have this basic structure
+```Shell
+$COCO/  
+$COCO/annotations/
+$COCO/cache/
+$COCO/cocoapi/
+$COCO/images/
+$COCO/test2017/
+$COCO/train2017/
+$COCO/val2017/
+```  
+
+## Training  
+- First download the fc-reduced [VGG-16](https://arxiv.org/abs/1409.1556) PyTorch base network weights at our [BaiduYun Driver]() 
