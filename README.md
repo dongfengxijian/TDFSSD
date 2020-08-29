@@ -1,12 +1,15 @@
 # TDFSSD: Top-Down Feature Fusion Single Shot MultiBox Detector
 By Haodong Pan, Jue Jiang, Guangfeng Chen
+
 ## Introduction
 This is the code for our accepted manuscript in Signal Processing: Image Communication. In brief, this is a SSD based approach for object detection across different scales.  
 If you use this code, please cite our paper.
+
 ## Prerequisities
 Python3.6, PyTorch0.4.1, and NVIDIA GPUs
+
 ## Installation
-* Install PyTorch-0.4.1 according to your environment refering to https://pytorch.org/.  
+* Install PyTorch-0.4.1 depending on your environment refering to https://pytorch.org/.  
 * Clone this repository.  
 * Compile the nms and coco tools:  
 ```Shell
@@ -25,18 +28,17 @@ For convenience, we provide simple VOC and COCO dataset loader.
 
 ### VOC Dataset
 ##### Download VOC2007 trainval & test
-
 ```Shell
 # specify a directory for dataset to be downloaded into, else default is ~/data/
 sh data/scripts/VOC2007.sh # <directory>
 ```
 
 ##### Download VOC2012 trainval
-
 ```Shell
 # specify a directory for dataset to be downloaded into, else default is ~/data/
 sh data/scripts/VOC2012.sh # <directory>
 ```
+
 ### COCO Dataset
 Install the MS COCO dataset at /path/to/coco from [official website](http://mscoco.org/), default is ~/data/COCO. It should have this basic structure
 ```Shell
@@ -51,4 +53,21 @@ $COCO/val2017/
 ```  
 
 ## Training  
-- First download the fc-reduced [VGG-16](https://arxiv.org/abs/1409.1556) PyTorch base network weights at our [BaiduYun Driver]() 
+- Download the fc-reduced [VGG-16](https://arxiv.org/abs/1409.1556) PyTorch base network weights at our [BaiduYun Driver]()
+- The modified [resnet-101](https://arxiv.org/pdf/1512.03385.pdf) PyTorch base network weights file is available at our [BaiduYun Driver]()
+- Place the weights files in the 'TDFSSD/weights' dir
+- To train TDFSSD with the following command:
+```shell
+python train_test.py -d VOC -s 300 -we 6
+```  
+- Note:  
+  * -d: datasets, VOC or COCO
+  * -s: image size, 300 or 512
+  * -we: warm epoch 
+  * 'resnet_trian_test.py' is used for training with the resnet as backbone
+  * The detail options can be found in the 'train_test.py' and 'resnet_trian_test.py'
+ 
+## Evaluation
+To evaluate a trained network with 'test.py' or 'eval.py' 
+
+## Models
