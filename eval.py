@@ -177,7 +177,7 @@ if __name__ == '__main__':
     # evaluation
     top_k = (300, 200)[args.dataset == 'COCO']
     detector = Detect(num_classes, 0, cfg)
-    rgb_means = ((104, 117, 123), (103.94, 116.78, 123.68))[args.version == 'RFB_mobile']
+    rgb_means = (104, 117, 123)
     rgb_std = (1, 1, 1)
     transform = BaseTransform(net.size, rgb_means, rgb_std, (2, 0, 1))
     object_detector = ObjectDetector(net, detector, transform, num_classes=num_classes, max_per_image=top_k, thresh=0.01)
