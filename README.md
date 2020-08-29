@@ -10,7 +10,7 @@ Python3.6, PyTorch0.4.1, and NVIDIA GPUs
 
 ## Installation
 * Install PyTorch-0.4.1 depending on your environment refering to https://pytorch.org/.  
-* Clone this repository.  
+* Clone this repository. This repository is mainly based on[RFBNet](https://github.com/ruinmessi/RFBNet), [ssd.pytorch](https://github.com/amdegroot/ssd.pytorch), [Chainer-ssd](https://github.com/Hakuyume/chainer-ssd) and [PytorchSSD](https://github.com/lzx1413/PytorchSSD), a huge thank to them. 
 * Compile the nms and coco tools:  
 ```Shell
 ./make.sh
