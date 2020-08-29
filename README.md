@@ -20,3 +20,21 @@ Then download the dataset by following the [instructions](#download-voc2007-trai
 ```Shell
 conda install opencv
 ```
+## Datasets
+For convenience, we provide simple VOC and COCO dataset loader.
+
+### VOC Dataset
+##### Download VOC2007 trainval & test
+
+```Shell
+# specify a directory for dataset to be downloaded into, else default is ~/data/
+sh data/scripts/VOC2007.sh # <directory>
+```
+
+##### Download VOC2012 trainval
+
+```Shell
+# specify a directory for dataset to be downloaded into, else default is ~/data/
+sh data/scripts/VOC2012.sh # <directory>
+```
+### COCO Dataset
