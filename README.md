@@ -71,3 +71,5 @@ python train_test.py -d VOC -s 300 -we 6
 To evaluate a trained network with 'test.py' or 'eval.py' 
 
 ## Models
+* 07+12 [TDFSSD300](https://pan.baidu.com/s/1jLZz-46iPFNJDLcf09pYIA) PW:1234
+* COCO [TDFSSD300](https://pan.baidu.com/s/12WpB-Lu7L5MaXKky3lwtng) PW:1234
