@@ -55,7 +55,7 @@ $COCO/val2017/
 ## Training  
 - Download the fc-reduced [VGG-16](https://arxiv.org/abs/1409.1556) PyTorch base network weights at our [BaiduYun Driver]()
 - The modified [resnet-101](https://arxiv.org/pdf/1512.03385.pdf) PyTorch base network weights file is available at our [BaiduYun Driver]()
-- Place the weights files in the 'TDFSSD/weights' dir
+- Place the weights files in 'TDFSSD/weights'
 - To train TDFSSD with the following command:
 ```shell
 python train_test.py -d VOC -s 300 -we 6
